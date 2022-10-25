@@ -243,7 +243,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel14">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Body Pressure:"/>
+        <Property name="text" type="java.lang.String" value="Blood Pressure:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel15">

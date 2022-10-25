@@ -97,7 +97,7 @@ public class EncounterCreateJPanel extends javax.swing.JPanel {
 
         jLabel13.setText("Body Temperature:");
 
-        jLabel14.setText("Body Pressure:");
+        jLabel14.setText("Blood Pressure:");
 
         jLabel15.setText("Feedback:");
 
