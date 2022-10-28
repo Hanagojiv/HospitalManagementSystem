@@ -18,7 +18,7 @@ public class EncounterCreateJPanel extends javax.swing.JPanel {
      * Creates new form EncounterCreateJPanel
      */
     EncounterHistory encounter;
-    public EncounterCreateJPanel() {
+    public EncounterCreateJPanel(EncounterHistory encounter) {
         initComponents();
         this.encounter = encounter;
     }

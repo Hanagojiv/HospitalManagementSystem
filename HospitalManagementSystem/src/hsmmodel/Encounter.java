@@ -157,5 +157,10 @@ public class Encounter {
         this.Feedback = Feedback;
     }
     
+       @Override
+   public String toString(){
+       return PatientName;
+   }
+    
     
 }

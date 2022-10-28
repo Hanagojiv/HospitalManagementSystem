@@ -44,12 +44,12 @@
                           <Component id="txtDocID" min="-2" max="-2" attributes="0"/>
                           <Component id="txtAge" min="-2" max="-2" attributes="0"/>
                           <Component id="txtSpecialization" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtGender1" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtDesignation1" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtGender" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDesignation" min="-2" max="-2" attributes="0"/>
                           <Component id="txtHospitalID" min="-2" max="-2" attributes="0"/>
                           <Component id="txtHospitalName" min="-2" max="-2" attributes="0"/>
                           <Component id="txtHospitalAddress" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtPhoneNumber1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtPhoneNumber" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="txtEmailID" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="288" max="-2" attributes="0"/>
@@ -91,17 +91,17 @@
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblGender" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtGender1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtGender" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lblDesignation" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtDesignation1" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDesignation" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblSpecialization" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="txtSpecialization" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblSpecialization" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -121,7 +121,7 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lblPhoneNumber" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtPhoneNumber1" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPhoneNumber" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -220,14 +220,14 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSpecializationActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtGender1">
+    <Component class="javax.swing.JTextField" name="txtGender">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGender1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtGenderActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtDesignation1">
+    <Component class="javax.swing.JTextField" name="txtDesignation">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDesignation1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDesignationActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtHospitalID">
@@ -250,9 +250,9 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEmailIDActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtPhoneNumber1">
+    <Component class="javax.swing.JTextField" name="txtPhoneNumber">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPhoneNumber1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPhoneNumberActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnSubmit">

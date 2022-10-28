@@ -42,13 +42,13 @@ public class DocCreateJPanel extends javax.swing.JPanel {
         txtDocID = new javax.swing.JTextField();
         txtAge = new javax.swing.JTextField();
         txtSpecialization = new javax.swing.JTextField();
-        txtGender1 = new javax.swing.JTextField();
-        txtDesignation1 = new javax.swing.JTextField();
+        txtGender = new javax.swing.JTextField();
+        txtDesignation = new javax.swing.JTextField();
         txtHospitalID = new javax.swing.JTextField();
         txtHospitalName = new javax.swing.JTextField();
         txtHospitalAddress = new javax.swing.JTextField();
         txtEmailID = new javax.swing.JTextField();
-        txtPhoneNumber1 = new javax.swing.JTextField();
+        txtPhoneNumber = new javax.swing.JTextField();
         btnSubmit = new javax.swing.JButton();
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
@@ -101,15 +101,15 @@ public class DocCreateJPanel extends javax.swing.JPanel {
             }
         });
 
-        txtGender1.addActionListener(new java.awt.event.ActionListener() {
+        txtGender.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtGender1ActionPerformed(evt);
+                txtGenderActionPerformed(evt);
             }
         });
 
-        txtDesignation1.addActionListener(new java.awt.event.ActionListener() {
+        txtDesignation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtDesignation1ActionPerformed(evt);
+                txtDesignationActionPerformed(evt);
             }
         });
 
@@ -137,9 +137,9 @@ public class DocCreateJPanel extends javax.swing.JPanel {
             }
         });
 
-        txtPhoneNumber1.addActionListener(new java.awt.event.ActionListener() {
+        txtPhoneNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPhoneNumber1ActionPerformed(evt);
+                txtPhoneNumberActionPerformed(evt);
             }
         });
 
@@ -180,12 +180,12 @@ public class DocCreateJPanel extends javax.swing.JPanel {
                             .addComponent(txtDocID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtSpecialization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtGender1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtDesignation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtDesignation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtHospitalID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtHospitalName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtHospitalAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtPhoneNumber1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtEmailID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(288, 288, 288))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -216,15 +216,15 @@ public class DocCreateJPanel extends javax.swing.JPanel {
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblGender)
-                    .addComponent(txtGender1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(9, 9, 9)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblDesignation)
-                    .addComponent(txtDesignation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtDesignation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblSpecialization)
-                    .addComponent(txtSpecialization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtSpecialization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblSpecialization))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblHospitalId)
@@ -240,7 +240,7 @@ public class DocCreateJPanel extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblPhoneNumber)
-                    .addComponent(txtPhoneNumber1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblEmailId)
@@ -267,13 +267,13 @@ public class DocCreateJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtSpecializationActionPerformed
 
-    private void txtGender1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGender1ActionPerformed
+    private void txtGenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtGenderActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtGender1ActionPerformed
+    }//GEN-LAST:event_txtGenderActionPerformed
 
-    private void txtDesignation1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDesignation1ActionPerformed
+    private void txtDesignationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDesignationActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtDesignation1ActionPerformed
+    }//GEN-LAST:event_txtDesignationActionPerformed
 
     private void txtHospitalIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHospitalIDActionPerformed
         // TODO add your handling code here:
@@ -291,9 +291,9 @@ public class DocCreateJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtEmailIDActionPerformed
 
-    private void txtPhoneNumber1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPhoneNumber1ActionPerformed
+    private void txtPhoneNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPhoneNumberActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPhoneNumber1ActionPerformed
+    }//GEN-LAST:event_txtPhoneNumberActionPerformed
 
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
         // TODO add your handling code here:
@@ -315,15 +315,15 @@ public class DocCreateJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel lblPhoneNumber;
     private javax.swing.JLabel lblSpecialization;
     private javax.swing.JTextField txtAge;
-    private javax.swing.JTextField txtDesignation1;
+    private javax.swing.JTextField txtDesignation;
     private javax.swing.JTextField txtDocID;
     private javax.swing.JTextField txtDocName;
     private javax.swing.JTextField txtEmailID;
-    private javax.swing.JTextField txtGender1;
+    private javax.swing.JTextField txtGender;
     private javax.swing.JTextField txtHospitalAddress;
     private javax.swing.JTextField txtHospitalID;
     private javax.swing.JTextField txtHospitalName;
-    private javax.swing.JTextField txtPhoneNumber1;
+    private javax.swing.JTextField txtPhoneNumber;
     private javax.swing.JTextField txtSpecialization;
     // End of variables declaration//GEN-END:variables
 }

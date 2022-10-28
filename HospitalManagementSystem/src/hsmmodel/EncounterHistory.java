@@ -32,6 +32,10 @@ public class EncounterHistory {
         encounter.add(newEnc);
         return newEnc;
     }
+//   @Override
+//   public String toString(){
+//       return name;
+//   }
     
    
     
