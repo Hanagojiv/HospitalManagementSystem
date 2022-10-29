@@ -33,26 +33,26 @@ public class ViewEncounter extends javax.swing.JPanel {
         
         for (Encounter en : encounter.getEncounter()){
             
-            Object[] row = new Object[17];
-            row[0] = en;
-            row[1] = en.getPatientID();
-            row[2] = en.getPatientAge();
-            row[3] = en.getHeight();
-            row[4] = en.getWeight();
-            row[5] = en.getBloodType();
-            row[6] = en.getGender();
-            row[7] = en.getPPhoneNo();
-            row[8] = en.getHospitalName();
-            row[9] = en.getHospitalID();
-            row[10] = en.getDoctorName();
-            row[11] = en.getDoctorID();
-            row[12] = en.getPulseRate();
-            row[13] = en.getBodyTemp();
-            row[14] = en.getBloodPressure();
-            row[15] = en.getFeedback();
+//            Object[] row = new Object[17];
+//            row[0] = en;
+//            row[1] = en.getPatientID();
+//            row[2] = en.getPatientAge();
+//            row[3] = en.getHeight();
+//            row[4] = en.getWeight();
+//            row[5] = en.getBloodType();
+//            row[6] = en.getGender();
+//            row[7] = en.getPPhoneNo();
+//            row[8] = en.getHospitalName();
+//            row[9] = en.getHospitalID();
+//            row[10] = en.getDoctorName();
+//            row[11] = en.getDoctorID();
+//            row[12] = en.getPulseRate();
+//            row[13] = en.getBodyTemp();
+//            row[14] = en.getBloodPressure();
+//            row[15] = en.getFeedback();
             
-            model.addRow(row);
-            
+//            model.addRow(row);
+//            
     }
     }
     /**
@@ -383,22 +383,22 @@ public class ViewEncounter extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) tblEncounterHistory.getModel();
       Encounter enc = (Encounter) model.getValueAt(selectedRowIndex, 0);
       
-      txtPatientName.setText(String.valueOf(enc.getPatientName()));
-      txtPatientID.setText(String.valueOf(enc.getPatientID()));
-      txtAge.setText(String.valueOf(enc.getPatientAge()));
-      txtHeight.setText(String.valueOf(enc.getHeight()));
-      txtWeight.setText(String.valueOf(enc.getWeight()));
-      txtBloodType.setText(String.valueOf(enc.getBloodType()));
-      txtGender.setText(String.valueOf(enc.getGender()));
-      txtPhoneNo.setText(String.valueOf(enc.getPPhoneNo()));
-      txtHospitalName.setText(String.valueOf(enc.getHospitalName()));
-      txtHospitalID.setText(String.valueOf(enc.getHospitalID()));
-      txtDocName.setText(String.valueOf(enc.getDoctorName()));
-      txtDocID.setText(String.valueOf(enc.getDoctorID()));
-      txtPulseRate.setText(String.valueOf(enc.getPulseRate()));
-      txtBodyTemp.setText(String.valueOf(enc.getBodyTemp()));
-      txtBloodPressure.setText(String.valueOf(enc.getBloodPressure()));
-      txtFeedback.setText(String.valueOf(enc.getFeedback()));
+//      txtPatientName.setText(String.valueOf(enc.getPatientName()));
+//      txtPatientID.setText(String.valueOf(enc.getPatientID()));
+//      txtAge.setText(String.valueOf(enc.getPatientAge()));
+//      txtHeight.setText(String.valueOf(enc.getHeight()));
+//      txtWeight.setText(String.valueOf(enc.getWeight()));
+//      txtBloodType.setText(String.valueOf(enc.getBloodType()));
+//      txtGender.setText(String.valueOf(enc.getGender()));
+//      txtPhoneNo.setText(String.valueOf(enc.getPPhoneNo()));
+//      txtHospitalName.setText(String.valueOf(enc.getHospitalName()));
+//      txtHospitalID.setText(String.valueOf(enc.getHospitalID()));
+//      txtDocName.setText(String.valueOf(enc.getDoctorName()));
+//      txtDocID.setText(String.valueOf(enc.getDoctorID()));
+//      txtPulseRate.setText(String.valueOf(enc.getPulseRate()));
+//      txtBodyTemp.setText(String.valueOf(enc.getBodyTemp()));
+//      txtBloodPressure.setText(String.valueOf(enc.getBloodPressure()));
+//      txtFeedback.setText(String.valueOf(enc.getFeedback()));
       
     }//GEN-LAST:event_btnViewActionPerformed
 
@@ -424,23 +424,23 @@ public class ViewEncounter extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) tblEncounterHistory.getModel();
       Encounter enc = (Encounter) model.getValueAt(selectedRowIndex, 0);
       
-      enc.setPatientName(String.valueOf(txtPatientName.getText()));
-      enc.setPatientID(Integer.parseInt(txtPatientID.getText()));
-      enc.setPatientAge(Integer.parseInt(txtAge.getText()));
-      enc.setHeight(Integer.parseInt(txtHeight.getText()));
-      enc.setWeight(Integer.parseInt(txtWeight.getText()));
-      enc.setBloodType(String.valueOf(txtBloodType));
-      enc.setGender(String.valueOf(txtGender));
-      enc.setPPhoneNo(txtPhoneNo.getText());
-      enc.setHospitalName(String.valueOf(txtHospitalName.getText()));
-      enc.setHospitalID(Integer.parseInt(txtHospitalID.getText()));
-      enc.setDoctorName(String.valueOf(txtDocName.getText()));
-      enc.setDoctorID(Integer.parseInt(txtDocID.getText()));
-      enc.setPulseRate(Integer.parseInt(txtPulseRate.getText()));
-      enc.setBodyTemp(Integer.parseInt(txtBodyTemp.getText()));
-      enc.setBloodPressure(String.valueOf(txtBloodPressure.getText()));
-     enc.setFeedback(String.valueOf(txtFeedback.getText()));
-      
+//      enc.setPatientName(String.valueOf(txtPatientName.getText()));
+//      enc.setPatientID(Integer.parseInt(txtPatientID.getText()));
+//      enc.setPatientAge(Integer.parseInt(txtAge.getText()));
+//      enc.setHeight(Integer.parseInt(txtHeight.getText()));
+//      enc.setWeight(Integer.parseInt(txtWeight.getText()));
+//      enc.setBloodType(String.valueOf(txtBloodType));
+//      enc.setGender(String.valueOf(txtGender));
+//      enc.setPPhoneNo(txtPhoneNo.getText());
+//      enc.setHospitalName(String.valueOf(txtHospitalName.getText()));
+//      enc.setHospitalID(Integer.parseInt(txtHospitalID.getText()));
+//      enc.setDoctorName(String.valueOf(txtDocName.getText()));
+//      enc.setDoctorID(Integer.parseInt(txtDocID.getText()));
+//      enc.setPulseRate(Integer.parseInt(txtPulseRate.getText()));
+//      enc.setBodyTemp(Integer.parseInt(txtBodyTemp.getText()));
+//      enc.setBloodPressure(String.valueOf(txtBloodPressure.getText()));
+//     enc.setFeedback(String.valueOf(txtFeedback.getText()));
+//      
       populateTable();
       
       

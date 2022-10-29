@@ -6,6 +6,7 @@ package hsmui;
 
 import hsmmodel.DoctorCatalogue;
 import hsmmodel.PatientCatalogue;
+import hsmmodel.PersonCatalogue;
 
 /**
  *
@@ -18,11 +19,13 @@ public class AdminPageJPanel extends javax.swing.JPanel {
      */
     DoctorCatalogue doctor;
     PatientCatalogue patient;
+    PersonCatalogue person;
     public AdminPageJPanel() {
         initComponents();
         
         doctor = new DoctorCatalogue();
         patient = new PatientCatalogue();
+        person = new PersonCatalogue();
     }
 
     /**
@@ -49,6 +52,11 @@ public class AdminPageJPanel extends javax.swing.JPanel {
         jPanel2 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
+        jSplitPane3 = new javax.swing.JSplitPane();
+        jPanel3 = new javax.swing.JPanel();
+        btnAddPerson = new javax.swing.JButton();
+        btnManage = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
 
         DocAddbtn.setText("Add");
         DocAddbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -182,15 +190,65 @@ public class AdminPageJPanel extends javax.swing.JPanel {
 
         jTabbedPane3.addTab("Hospital", jPanel8);
 
+        btnAddPerson.setText("Add");
+        btnAddPerson.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddPersonActionPerformed(evt);
+            }
+        });
+
+        btnManage.setText("Manage");
+        btnManage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnManageActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnManage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnAddPerson, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(205, 205, 205)
+                .addComponent(btnAddPerson)
+                .addGap(28, 28, 28)
+                .addComponent(btnManage)
+                .addContainerGap(484, Short.MAX_VALUE))
+        );
+
+        jSplitPane3.setLeftComponent(jPanel3);
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 689, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 763, Short.MAX_VALUE)
+        );
+
+        jSplitPane3.setRightComponent(jPanel4);
+
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 794, Short.MAX_VALUE)
+            .addComponent(jSplitPane3)
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 763, Short.MAX_VALUE)
+            .addComponent(jSplitPane3)
         );
 
         jTabbedPane3.addTab("Person", jPanel9);
@@ -231,22 +289,39 @@ public class AdminPageJPanel extends javax.swing.JPanel {
         
     }//GEN-LAST:event_btnPatientAddActionPerformed
 
+    private void btnAddPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddPersonActionPerformed
+        // TODO add your handling code here:
+        PersonAddJPanel peradd = new PersonAddJPanel(person);
+        jSplitPane3.setRightComponent(peradd);
+    }//GEN-LAST:event_btnAddPersonActionPerformed
+
+    private void btnManageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageActionPerformed
+        // TODO add your handling code here:
+        PersonAdminJPanel personadmin = new PersonAdminJPanel(person);
+        jSplitPane3.setRightComponent(personadmin);
+    }//GEN-LAST:event_btnManageActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton DocAddbtn;
+    private javax.swing.JButton btnAddPerson;
     private javax.swing.JButton btnDocManage;
+    private javax.swing.JButton btnManage;
     private javax.swing.JButton btnPatientAdd;
     private javax.swing.JButton btnPatientManage;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JSplitPane jSplitPane2;
+    private javax.swing.JSplitPane jSplitPane3;
     private javax.swing.JTabbedPane jTabbedPane3;
     // End of variables declaration//GEN-END:variables
 }

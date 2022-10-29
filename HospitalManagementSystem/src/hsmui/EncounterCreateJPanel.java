@@ -282,24 +282,24 @@ public class EncounterCreateJPanel extends javax.swing.JPanel {
         int DocID = Integer.parseInt(txtDoctorID.getText());
         int PulseRate = Integer.parseInt(txtPulseRate.getText());
         int BodyTemp = Integer.parseInt(txtBodyTemp.getText());
-        Encounter enc = encounter.addNewEncounter();
-        
-        enc.setPatientName(txtPatientName.getText());
-        enc.setPatientID(PatientID);
-        enc.setPatientAge(Age);
-        enc.setHeight(Height);
-        enc.setWeight(Weight);
-        enc.setBloodType(txtPBloodType.getText());
-        enc.setGender(txtPGender.getText());
-        enc.setHospitalName(txtHospitalName.getText());
-        enc.setHospitalID(HosID);
-        enc.setPPhoneNo(txtPatientMobileNo.getText());
-        enc.setDoctorID(DocID);
-        enc.setDoctorName(txtDoctorName.getText());
-        enc.setPulseRate(PulseRate);
-        enc.setBodyTemp(BodyTemp);
-        enc.setBloodPressure(txtBloodPressure.getText());
-        enc.setFeedback(txtFeedback.getText());
+//        Encounter enc = encounter.addNewEncounter();
+//        
+//        enc.setPatientName(txtPatientName.getText());
+//        enc.setPatientID(PatientID);
+//        enc.setPatientAge(Age);
+//        enc.setHeight(Height);
+//        enc.setWeight(Weight);
+//        enc.setBloodType(txtPBloodType.getText());
+//        enc.setGender(txtPGender.getText());
+//        enc.setHospitalName(txtHospitalName.getText());
+//        enc.setHospitalID(HosID);
+//        enc.setPPhoneNo(txtPatientMobileNo.getText());
+//        enc.setDoctorID(DocID);
+//        enc.setDoctorName(txtDoctorName.getText());
+//        enc.setPulseRate(PulseRate);
+//        enc.setBodyTemp(BodyTemp);
+//        enc.setBloodPressure(txtBloodPressure.getText());
+//        enc.setFeedback(txtFeedback.getText());
         
         JOptionPane.showMessageDialog(this, "New Encounter Created");
         

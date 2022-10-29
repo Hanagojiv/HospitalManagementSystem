@@ -30,5 +30,7 @@ public class PatientCatalogue {
         Patient pt = new Patient();
         patient.add(pt);
         return pt;
-    }
+        
+        
+    }     
 }

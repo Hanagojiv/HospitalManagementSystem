@@ -15,7 +15,7 @@ public class EncounterHistory {
     private ArrayList<Encounter> encounter;
 
     public EncounterHistory() {
-        this.encounter = new ArrayList<Encounter>();
+        this.encounter = new ArrayList<>();
     }
 
     public ArrayList<Encounter> getEncounter() {
@@ -26,12 +26,13 @@ public class EncounterHistory {
         this.encounter = encounter;
     }
     
-    public Encounter addNewEncounter(){
-        
-        Encounter newEnc = new Encounter();
-        encounter.add(newEnc);
-        return newEnc;
-    }
+    
+//    public Encounter addNewEncounter(){
+//        
+//        Encounter newEnc = new Encounter();
+//        encounter.add(newEnc);
+//        return newEnc;
+//    }
 //   @Override
 //   public String toString(){
 //       return name;

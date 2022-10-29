@@ -15,7 +15,7 @@ public class PersonCatalogue {
     private ArrayList<Person> person;
 
     public PersonCatalogue() {
-        this.person = person;
+        this.person = new ArrayList<Person>();
     }
 
     public ArrayList<Person> getPerson() {
