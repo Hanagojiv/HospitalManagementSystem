@@ -229,12 +229,14 @@ JOptionPane.showMessageDialog(this, "New Doctor Created");
 
 txtDocName.setText("");
 txtDocID.setText("");
+txtGender.setText("");
 txtHospitalID.setText("");
 txtDocName.setText("");
 txtAge.setText("");
 txtDesignation.setText("");
 txtSpecialization.setText("");
 txtContact.setText("");
+txtEmailID.setText("");
 
         
 //

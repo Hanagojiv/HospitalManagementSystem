@@ -5,6 +5,7 @@
 package hsmui;
 
 import hsmmodel.DoctorCatalogue;
+import hsmmodel.PatientCatalogue;
 
 /**
  *
@@ -16,11 +17,12 @@ public class AdminPageJPanel extends javax.swing.JPanel {
      * Creates new form AdminPageJPanel
      */
     DoctorCatalogue doctor;
+    PatientCatalogue patient;
     public AdminPageJPanel() {
         initComponents();
         
         doctor = new DoctorCatalogue();
-        
+        patient = new PatientCatalogue();
     }
 
     /**
@@ -42,8 +44,8 @@ public class AdminPageJPanel extends javax.swing.JPanel {
         jPanel7 = new javax.swing.JPanel();
         jSplitPane1 = new javax.swing.JSplitPane();
         jPanel1 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnPatientAdd = new javax.swing.JButton();
+        btnPatientManage = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
@@ -110,14 +112,14 @@ public class AdminPageJPanel extends javax.swing.JPanel {
 
         jTabbedPane3.addTab("Doctor", jPanel6);
 
-        jButton3.setText("Add");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnPatientAdd.setText("Add");
+        btnPatientAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnPatientAddActionPerformed(evt);
             }
         });
 
-        jButton4.setText("Manage");
+        btnPatientManage.setText("Manage");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -125,17 +127,17 @@ public class AdminPageJPanel extends javax.swing.JPanel {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnPatientManage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnPatientAdd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 24, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(213, 213, 213)
-                .addComponent(jButton3)
+                .addComponent(btnPatientAdd)
                 .addGap(31, 31, 31)
-                .addComponent(jButton4)
+                .addComponent(btnPatientManage)
                 .addContainerGap(473, Short.MAX_VALUE))
         );
 
@@ -221,16 +223,20 @@ public class AdminPageJPanel extends javax.swing.JPanel {
         jSplitPane2.setRightComponent(docadmin);
     }//GEN-LAST:event_btnDocManageActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnPatientAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPatientAddActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+        
+            PatientAddJPanel patadd = new PatientAddJPanel(patient);
+            jSplitPane1.setRightComponent(patadd);
+        
+    }//GEN-LAST:event_btnPatientAddActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton DocAddbtn;
     private javax.swing.JButton btnDocManage;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton btnPatientAdd;
+    private javax.swing.JButton btnPatientManage;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
