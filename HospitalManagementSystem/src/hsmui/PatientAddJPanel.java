@@ -37,20 +37,18 @@ public class PatientAddJPanel extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         txtHospitalID = new javax.swing.JTextField();
         PersonalInfoLabel1 = new javax.swing.JLabel();
-        txtEmailID = new javax.swing.JTextField();
         GenderLabel = new javax.swing.JLabel();
         ContactLabel = new javax.swing.JLabel();
         txtPatID = new javax.swing.JTextField();
-        EmailLabel = new javax.swing.JLabel();
         txtAge = new javax.swing.JTextField();
         txtContact = new javax.swing.JTextField();
         txtPatName = new javax.swing.JTextField();
-        AddButton = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         txtGender = new javax.swing.JTextField();
         txtHospitalName = new javax.swing.JTextField();
         HospitalNamelbl = new javax.swing.JLabel();
         NameLabel = new javax.swing.JLabel();
+        btnSave = new javax.swing.JButton();
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -63,31 +61,17 @@ public class PatientAddJPanel extends javax.swing.JPanel {
         PersonalInfoLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         PersonalInfoLabel1.setText("Contact Information");
 
-        txtEmailID.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtEmailIDActionPerformed(evt);
-            }
-        });
-
         GenderLabel.setText("Gender");
 
         ContactLabel.setText("Contact");
-
-        EmailLabel.setText("Email Id");
-
-        AddButton.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        AddButton.setText("ADD");
-        AddButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddButtonActionPerformed(evt);
-            }
-        });
 
         jLabel4.setText("Pateint Name");
 
         HospitalNamelbl.setText("Hospital Name");
 
         NameLabel.setText("Patient ID");
+
+        btnSave.setText("Save");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -106,8 +90,7 @@ public class PatientAddJPanel extends javax.swing.JPanel {
                     .addComponent(jLabel2)
                     .addComponent(jLabel6)
                     .addComponent(HospitalNamelbl)
-                    .addComponent(ContactLabel)
-                    .addComponent(EmailLabel))
+                    .addComponent(ContactLabel))
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -117,16 +100,15 @@ public class PatientAddJPanel extends javax.swing.JPanel {
                         .addComponent(txtPatName)
                         .addComponent(txtHospitalID, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(txtHospitalName, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(txtContact, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtEmailID, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtContact, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(PersonalInfoLabel1)
                 .addGap(325, 325, 325))
             .addGroup(layout.createSequentialGroup()
-                .addGap(354, 354, 354)
-                .addComponent(AddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(357, 357, 357)
+                .addComponent(btnSave)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -164,125 +146,26 @@ public class PatientAddJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ContactLabel)
                     .addComponent(txtContact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(EmailLabel)
-                    .addComponent(txtEmailID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(65, 65, 65)
-                .addComponent(AddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(301, 301, 301))
+                .addGap(61, 61, 61)
+                .addComponent(btnSave)
+                .addGap(367, 367, 367))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtEmailIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailIDActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtEmailIDActionPerformed
-
-    private void AddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddButtonActionPerformed
-        // TODO add your handling code here:
-        Patient pat = patient.addNewPateint();
-        //        String docName = txtDocName.getText();
-        //        String docID = txtDocID.getText();
-        //        String gender = txtGender.getText();
-        //        String age = txtAge.getText();
-        //        String Designation = txtDesignation.getText();
-        //        String Specialization = txtSpecialization.getText();
-//        //        String PhoneNo = txtContact.getText();
-//        //        String Emailid =txtEmailID.getText();
-//
-//        pat.setPateintName(txtPatName.getText());
-//        pat.setPateintID(Integer.parseInt(txtPatID.getText()));
-//        pat.setGender(txtGender.getText());
-//        pat.setAge(Integer.parseInt(txtAge.getText()));
-//        pat.setHospitalName(txtHospitalName.getText());
-//        pat.setHospitalID(Integer.parseInt(txtHospitalID.getText()));
-//        pat.setContactNum(txtContact.getText());
-//        pat.setEmailID(txtEmailID.getText());
-//
-//        JOptionPane.showMessageDialog(this, "New Doctor Created");
-//
-//        txtPatName.setText("");
-//        txtPatID.setText("");
-//        txtGender.setText("");
-//        txtHospitalID.setText("");
-//        txtPatName.setText("");
-//        txtAge.setText("");
-//        txtDesignation.setText("");
-//        txtSpecialization.setText("");
-//        txtContact.setText("");
-//        txtEmailID.setText("");
-
-        //
-        //        doc.setDocID(docId);
-        //        doc.setDocName(name);
-        //        doc.setGender(gender);
-        //
-        //        JOptionPane.showMessageDialog(this , "New Doctor Information Added!");
-        //
-        //        txt_id.setText("");
-        //        txtname.setText("");
-        //        txtage.setText("");
-        //        txtcontact.setText("");
-        //        txtemail.setText("");
-        //        txtgender.setName("select gender");
-
-        //        Employee emp = employeedir.addNewEmployee();
-        //        String Name = NameTxtBox.getText();
-        //        String Gender = GenderTxtBox.getSelectedItem().toString();
-        //        int Age = Integer.parseInt(AgeTxtBox.getText());
-        //        String EmpID = EmpIdTxtBox.getText();
-        //        String Team = TeamTxtBox.getText();
-        //        String Position = PositionTxtBox.getText();
-        //        String Level = LevelTxtBox.getText();
-        //        String Contact = ContactTxtBox.getText();
-        //        String Email = EmailTxtBox.getText();
-        //        String Date = DateTxtBox.getText();
-        //        String Path = filepath;
-        //
-        //        emp.setEmployeeID(EmpID);
-        //        emp.setName(Name);
-        //        emp.setGender(Gender);
-        //        emp.setAge(Age);
-        //        emp.setTeamInfo(Team);
-        //        emp.setPositionTitle(Position);
-        //        emp.setLevel(Level);
-        //        emp.setContact(Contact);
-        //        emp.setEmail(Email);
-        //        emp.setStartDate(Date);
-        //        emp.setImage(Path);
-        //
-        //        JOptionPane.showMessageDialog(this , "New Employee Information Added!");
-        //
-        //        NameTxtBox.setText("");
-        //        GenderTxtBox.setName("select");
-        //        AgeTxtBox.setText("");
-        //        EmpIdTxtBox.setText("");
-        //        TeamTxtBox.setText("");
-        //        PositionTxtBox.setText("");
-        //        LevelTxtBox.setText("");
-        //        ContactTxtBox.setText("");
-        //        EmailTxtBox.setText("");
-        //        DateTxtBox.setText("");
-        //        ImageLabel.setText("");
-        //        nLbl.setText("");
-    }//GEN-LAST:event_AddButtonActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AddButton;
     private javax.swing.JLabel ContactLabel;
-    private javax.swing.JLabel EmailLabel;
     private javax.swing.JLabel GenderLabel;
     private javax.swing.JLabel HospitalNamelbl;
     private javax.swing.JLabel NameLabel;
     private javax.swing.JLabel PersonalInfoLabel1;
+    private javax.swing.JButton btnSave;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField txtAge;
     private javax.swing.JTextField txtContact;
-    private javax.swing.JTextField txtEmailID;
     private javax.swing.JTextField txtGender;
     private javax.swing.JTextField txtHospitalID;
     private javax.swing.JTextField txtHospitalName;

@@ -22,14 +22,14 @@ public class PersonAdminJPanel extends javax.swing.JPanel {
      * Creates new form PersonAdminJPanel
      */
     PersonCatalogue person;
-    VitalHistory vital;
+    VitalHistory vitalHistory;
     Encounter encounter;
     public PersonAdminJPanel(PersonCatalogue person) {
         initComponents();
         this.person = person;
         populatePatientTable();
         this.encounter = encounter;
-        vital = new VitalHistory();
+        vitalHistory = new VitalHistory();
     }
     
         private void populatePatientTable() {
@@ -352,7 +352,7 @@ public class PersonAdminJPanel extends javax.swing.JPanel {
         }
     //  Encounter enc = (Encounter) model.getValueAt(selectedRowIndex, 0);
     Encounter e = new Encounter();
-      Vital v = vital.addVitals();
+      Vital v = vitalHistory.addVitals();
       v.setBloodPressure(Integer.parseInt(txtBloodPressure.getText()));
                 v.setPulseRate(Integer.parseInt(txtPulseRate.getText()));
                 v.setBodyTemp(Integer.parseInt(txtBodyTemp.getText()));
@@ -400,15 +400,15 @@ public class PersonAdminJPanel extends javax.swing.JPanel {
      DefaultTableModel model = (DefaultTableModel) tableEncounter.getModel();
        model.setRowCount(0);
        
-//       for (Vital v : vitalHistory.getVitalDetails()){
-//           Object[] row = new Object[6];
-//           row[0] = v.getBloodSugar();
-//           row[1] = v.getBloodPressure();
-//           row[2] = v.getTemperature();
-//           row[3] = v.getPulse();
-//           row[4] = v.getEncounter().getEncounterCount();
-//           model.addRow(row);
-    
+       for (Vital v : vitalHistory.getVitalsHistory()){
+           Object[] row = new Object[6];
+           row[0] = v.getBloodSugar();
+           row[1] = v.getBloodPressure();
+           row[2] = v.getBodyTemp();
+           row[3] = v.getPulseRate();
+           row[4] = v.getEncounter().getEncounterCount();
+           model.addRow(row);
+       }
     
     }
 }

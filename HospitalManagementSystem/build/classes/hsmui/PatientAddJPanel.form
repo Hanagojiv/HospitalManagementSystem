@@ -31,7 +31,6 @@
                   <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="HospitalNamelbl" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="ContactLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="EmailLabel" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
@@ -44,7 +43,6 @@
                       <Component id="txtHospitalName" alignment="0" min="-2" pref="125" max="-2" attributes="0"/>
                   </Group>
                   <Component id="txtContact" min="-2" pref="132" max="-2" attributes="0"/>
-                  <Component id="txtEmailID" min="-2" pref="132" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
@@ -54,8 +52,8 @@
               <EmptySpace min="-2" pref="325" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="354" max="-2" attributes="0"/>
-              <Component id="AddButton" min="-2" pref="93" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="357" max="-2" attributes="0"/>
+              <Component id="btnSave" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -102,14 +100,9 @@
                   <Component id="ContactLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtContact" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="EmailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtEmailID" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-              <Component id="AddButton" min="-2" pref="44" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="301" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+              <Component id="btnSave" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="367" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -144,11 +137,6 @@
         <Property name="text" type="java.lang.String" value="Contact Information"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtEmailID">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEmailIDActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JLabel" name="GenderLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Gender"/>
@@ -161,27 +149,11 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtPatID">
     </Component>
-    <Component class="javax.swing.JLabel" name="EmailLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Email Id"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JTextField" name="txtAge">
     </Component>
     <Component class="javax.swing.JTextField" name="txtContact">
     </Component>
     <Component class="javax.swing.JTextField" name="txtPatName">
-    </Component>
-    <Component class="javax.swing.JButton" name="AddButton">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Lucida Grande" size="18" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="ADD"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddButtonActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
@@ -200,6 +172,11 @@
     <Component class="javax.swing.JLabel" name="NameLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Patient ID"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnSave">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Save"/>
       </Properties>
     </Component>
   </SubComponents>

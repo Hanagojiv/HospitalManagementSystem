@@ -12,21 +12,26 @@ import java.util.ArrayList;
  */
 public class VitalHistory {
     
-    private ArrayList<Vital> vitalsHistory;
+    private ArrayList<Vital> vitalHistory;
+    
+    
+        public VitalHistory() {
+        this.vitalHistory = new ArrayList<>();
+    }
 
     public ArrayList<Vital> getVitalsHistory() {
-        return vitalsHistory;
+        return vitalHistory;
     }
 
     public void setVitalsHistory(ArrayList<Vital> vitalsHistory) {
-        this.vitalsHistory = vitalsHistory;
+        this.vitalHistory = vitalsHistory;
     }
 
     
       public Vital addVitals() {
 
         Vital v = new Vital();
-        vitalsHistory.add(v);
+        vitalHistory.add(v);
 
         return v;
 

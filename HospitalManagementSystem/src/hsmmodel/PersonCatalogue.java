@@ -14,13 +14,18 @@ public class PersonCatalogue {
     
     private ArrayList<Person> person;
 
-    public PersonCatalogue() {
-        this.person = new ArrayList<Person>();
-    }
+//    public PersonCatalogue() {
+//        this.person = new ArrayList<Person>();
+//    }
 
     public ArrayList<Person> getPerson() {
         return person;
     }
+
+    public PersonCatalogue() {
+        this.person = new ArrayList();
+    }
+    
 
     public void setPerson(ArrayList<Person> person) {
         this.person = person;
