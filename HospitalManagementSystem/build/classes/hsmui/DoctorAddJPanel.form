@@ -28,9 +28,7 @@
                           <Component id="NameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="GenderLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="HospitalNamelbl" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -40,9 +38,7 @@
                           <Component id="txtGender" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtAge" alignment="0" min="-2" pref="125" max="-2" attributes="0"/>
                           <Component id="txtDocName" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtDesignation" alignment="0" min="-2" pref="125" max="-2" attributes="0"/>
                           <Component id="txtHospitalID" alignment="0" min="-2" pref="125" max="-2" attributes="0"/>
-                          <Component id="txtSpecialization" min="-2" pref="125" max="-2" attributes="0"/>
                           <Component id="txtHospitalName" min="-2" pref="125" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -100,29 +96,19 @@
                   <Component id="txtAge" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jLabel3" alignment="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtDesignation" alignment="1" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtSpecialization" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtHospitalID" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="HospitalNamelbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtHospitalName" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="HospitalNamelbl" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtHospitalName" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
               <Component id="PersonalInfoLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="26" max="32767" attributes="0"/>
+              <EmptySpace pref="23" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="ContactLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtContact" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -160,8 +146,6 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddButtonActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtDesignation">
-    </Component>
     <Component class="javax.swing.JTextField" name="txtAge">
     </Component>
     <Component class="javax.swing.JTextField" name="txtDocID">
@@ -169,11 +153,6 @@
     <Component class="javax.swing.JLabel" name="GenderLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Gender"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Specialization"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtHospitalID">
@@ -186,11 +165,6 @@
     <Component class="javax.swing.JLabel" name="NameLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Doctor ID"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Designation"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtGender">
@@ -231,8 +205,6 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Hospital ID"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtSpecialization">
     </Component>
     <Component class="javax.swing.JLabel" name="HospitalNamelbl">
       <Properties>

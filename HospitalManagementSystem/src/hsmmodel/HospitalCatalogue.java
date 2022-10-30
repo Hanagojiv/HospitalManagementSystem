@@ -36,6 +36,8 @@ public class HospitalCatalogue {
         public void deleteHospital(Hospital em ){
         hospitals.remove(em);
     }
+        
+        
 
 //    public HospitalCatalogue(ArrayList<Hospital> hospitals) {
 //        this.hospitals = hospitals;

@@ -19,7 +19,7 @@ public class HospitalAdminJPanel extends javax.swing.JPanel {
      * Creates new form HospitalAdminJPanel
      */
     HospitalCatalogue hospitals;
-    public HospitalAdminJPanel(HospitalCatalogue hospital) {
+    public HospitalAdminJPanel(HospitalCatalogue hospitals) {
         initComponents();
         this.hospitals = hospitals;
         

@@ -34,15 +34,12 @@ public class DoctorAddJPanel extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
         AddButton = new javax.swing.JButton();
-        txtDesignation = new javax.swing.JTextField();
         txtAge = new javax.swing.JTextField();
         txtDocID = new javax.swing.JTextField();
         GenderLabel = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         txtHospitalID = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         NameLabel = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         txtGender = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         txtDocName = new javax.swing.JTextField();
@@ -52,7 +49,6 @@ public class DoctorAddJPanel extends javax.swing.JPanel {
         txtEmailID = new javax.swing.JTextField();
         PersonalInfoLabel1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        txtSpecialization = new javax.swing.JTextField();
         HospitalNamelbl = new javax.swing.JLabel();
         txtHospitalName = new javax.swing.JTextField();
 
@@ -70,13 +66,9 @@ public class DoctorAddJPanel extends javax.swing.JPanel {
 
         GenderLabel.setText("Gender");
 
-        jLabel5.setText("Specialization");
-
         jLabel2.setText("Age");
 
         NameLabel.setText("Doctor ID");
-
-        jLabel3.setText("Designation");
 
         jLabel4.setText("Name");
 
@@ -112,9 +104,7 @@ public class DoctorAddJPanel extends javax.swing.JPanel {
                             .addComponent(NameLabel)
                             .addComponent(jLabel4)
                             .addComponent(GenderLabel)
-                            .addComponent(jLabel3)
                             .addComponent(jLabel2)
-                            .addComponent(jLabel5)
                             .addComponent(jLabel6)
                             .addComponent(HospitalNamelbl))
                         .addGap(43, 43, 43)
@@ -123,9 +113,7 @@ public class DoctorAddJPanel extends javax.swing.JPanel {
                             .addComponent(txtGender)
                             .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtDocName)
-                            .addComponent(txtDesignation, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtHospitalID, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtSpecialization, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtHospitalName, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(txtContact, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtEmailID, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -168,25 +156,17 @@ public class DoctorAddJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3)
-                    .addComponent(txtDesignation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(9, 9, 9)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(txtSpecialization, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(txtHospitalID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(HospitalNamelbl)
                     .addComponent(txtHospitalName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(64, 64, 64)
+                .addGap(122, 122, 122)
                 .addComponent(PersonalInfoLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ContactLabel)
                     .addComponent(txtContact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -219,8 +199,8 @@ doc.setGender(txtGender.getText());
 doc.setHospitalID(Integer.parseInt(txtHospitalID.getText()));
 doc.setHospitalName(txtHospitalName.getText());
 doc.setAge(Integer.parseInt(txtAge.getText()));
-doc.setDesignation(txtDesignation.getText());
-doc.setSpecialization(txtSpecialization.getText());
+//doc.setDesignation(txtDesignation.getText());
+//doc.setSpecialization(txtSpecialization.getText());
 doc.setContactNum(txtContact.getText());
 doc.setEmailID(txtEmailID.getText());
 
@@ -233,8 +213,8 @@ txtGender.setText("");
 txtHospitalID.setText("");
 txtDocName.setText("");
 txtAge.setText("");
-txtDesignation.setText("");
-txtSpecialization.setText("");
+//txtDesignation.setText("");
+//txtSpecialization.setText("");
 txtContact.setText("");
 txtEmailID.setText("");
 
@@ -309,19 +289,15 @@ txtEmailID.setText("");
     private javax.swing.JLabel PersonalInfoLabel1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField txtAge;
     private javax.swing.JTextField txtContact;
-    private javax.swing.JTextField txtDesignation;
     private javax.swing.JTextField txtDocID;
     private javax.swing.JTextField txtDocName;
     private javax.swing.JTextField txtEmailID;
     private javax.swing.JTextField txtGender;
     private javax.swing.JTextField txtHospitalID;
     private javax.swing.JTextField txtHospitalName;
-    private javax.swing.JTextField txtSpecialization;
     // End of variables declaration//GEN-END:variables
 }

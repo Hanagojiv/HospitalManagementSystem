@@ -47,7 +47,10 @@ public class Hospital {
         this.Community = Community;
     }
     
-    
+               @Override
+   public String toString(){
+       return HospitalName;
+   }
     
     
 }

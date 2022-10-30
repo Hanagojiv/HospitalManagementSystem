@@ -4,6 +4,11 @@
  */
 package hsmui;
 
+import hsmmodel.Community;
+import hsmmodel.CommunityCatalogue;
+import hsmmodel.Person;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author vivekhanagoji
@@ -13,8 +18,11 @@ public class CommunityAddJPanel extends javax.swing.JPanel {
     /**
      * Creates new form CommunityAddJPanel
      */
-    public CommunityAddJPanel() {
+    CommunityCatalogue communities;
+    public CommunityAddJPanel(CommunityCatalogue communities) {
         initComponents();
+        this.communities = communities;
+        
     }
 
     /**
@@ -40,6 +48,11 @@ public class CommunityAddJPanel extends javax.swing.JPanel {
         jLabel4.setText("City");
 
         btnSave.setText("Save");
+        btnSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSaveActionPerformed(evt);
+            }
+        });
 
         NameLabel.setText("Community Name");
 
@@ -87,6 +100,20 @@ public class CommunityAddJPanel extends javax.swing.JPanel {
                 .addContainerGap(536, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+        // TODO add your handling code here:
+        
+         Community comm = communities.addNewCommunity();
+        comm.setCommunityName(txtCommunityName.getText());
+        comm.setCityName(txtCityName.getText());
+      
+        
+        JOptionPane.showMessageDialog(this, "New Person Created");
+        
+        txtCommunityName.setText("");
+        txtCityName.setText("");
+    }//GEN-LAST:event_btnSaveActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

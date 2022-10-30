@@ -28,6 +28,10 @@ public class Community {
     public void setCityName(String CityName) {
         this.CityName = CityName;
     }
+                   @Override
+   public String toString(){
+       return CommunityName;
+   }
     
     
     

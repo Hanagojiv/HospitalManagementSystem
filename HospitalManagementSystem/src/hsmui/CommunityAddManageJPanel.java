@@ -4,6 +4,8 @@
  */
 package hsmui;
 
+import hsmmodel.CommunityCatalogue;
+
 /**
  *
  * @author vivekhanagoji
@@ -13,8 +15,10 @@ public class CommunityAddManageJPanel extends javax.swing.JPanel {
     /**
      * Creates new form CommunityAddManageJPanel
      */
-    public CommunityAddManageJPanel() {
+    CommunityCatalogue communities;
+    public CommunityAddManageJPanel(CommunityCatalogue communities) {
         initComponents();
+        this.communities = communities;
     }
 
     /**
@@ -96,13 +100,13 @@ public class CommunityAddManageJPanel extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        CommunityAddJPanel comm = new CommunityAddJPanel();
+        CommunityAddJPanel comm = new CommunityAddJPanel(communities);
         jSplitPane1.setRightComponent(comm);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        CommunityAdminJPanel commManage = new CommunityAdminJPanel();
+        CommunityAdminJPanel commManage = new CommunityAdminJPanel(communities);
         jSplitPane1.setRightComponent(commManage);
     }//GEN-LAST:event_jButton2ActionPerformed
 

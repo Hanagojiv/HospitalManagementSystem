@@ -25,7 +25,7 @@ public class MainPageJFrame extends javax.swing.JFrame {
     EncounterHistory encounter;
     PatientCatalogue patient;
     PersonCatalogue person;
-    CommunityCatalogue community;
+    CommunityCatalogue communities;
     public MainPageJFrame() {
         initComponents();
         this.hospitals = new HospitalCatalogue();
@@ -34,7 +34,7 @@ public class MainPageJFrame extends javax.swing.JFrame {
         this.encounter = new EncounterHistory();
         this.patient = new PatientCatalogue();
         this.person = new PersonCatalogue();
-        this.community = new CommunityCatalogue();
+        this.communities = new CommunityCatalogue();
     }
 
     /**
@@ -199,7 +199,7 @@ public class MainPageJFrame extends javax.swing.JFrame {
 
     private void btnCommunityAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCommunityAdminActionPerformed
         // TODO add your handling code here:
-        CommunityAddManageJPanel comm = new CommunityAddManageJPanel();
+        CommunityAddManageJPanel comm = new CommunityAddManageJPanel(communities);
         jSplitPane1.setRightComponent(comm);
     }//GEN-LAST:event_btnCommunityAdminActionPerformed
 

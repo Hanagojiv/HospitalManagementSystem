@@ -24,7 +24,12 @@ public class CommunityCatalogue {
 
     public CommunityCatalogue() {
        // this.communities = communities;
+       this.communities = new ArrayList();
     }
-    
+        public Community addNewCommunity(){
+        Community comm = new Community();
+        communities.add(comm);
+        return comm;
+    }
     
 }

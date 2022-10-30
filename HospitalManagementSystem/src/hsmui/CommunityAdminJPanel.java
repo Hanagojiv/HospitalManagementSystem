@@ -4,6 +4,12 @@
  */
 package hsmui;
 
+import hsmmodel.Community;
+import hsmmodel.CommunityCatalogue;
+import hsmmodel.Hospital;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author vivekhanagoji
@@ -13,8 +19,11 @@ public class CommunityAdminJPanel extends javax.swing.JPanel {
     /**
      * Creates new form CommunityAdminJPanel
      */
-    public CommunityAdminJPanel() {
+     CommunityCatalogue communities;
+    public CommunityAdminJPanel(CommunityCatalogue communities) {
         initComponents();
+        this.communities =   communities;
+        populateTable();
     }
 
     /**
@@ -34,6 +43,9 @@ public class CommunityAdminJPanel extends javax.swing.JPanel {
         txtCommunityName = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         txtCityName = new javax.swing.JTextField();
+        btnView = new javax.swing.JButton();
+        btnUpdate = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -65,18 +77,45 @@ public class CommunityAdminJPanel extends javax.swing.JPanel {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Community Details");
 
+        btnView.setText("View");
+        btnView.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewActionPerformed(evt);
+            }
+        });
+
+        btnUpdate.setText("Update");
+        btnUpdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUpdateActionPerformed(evt);
+            }
+        });
+
+        jButton3.setText("Delete");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(60, 60, 60)
+                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 677, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(305, 305, 305)
+                                .addComponent(btnView)
+                                .addGap(31, 31, 31)
+                                .addComponent(btnUpdate)
+                                .addGap(32, 32, 32)
+                                .addComponent(jButton3)))
+                        .addGap(0, 57, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 677, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(63, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addContainerGap()
@@ -101,7 +140,12 @@ public class CommunityAdminJPanel extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addGap(65, 65, 65)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(555, Short.MAX_VALUE))
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnView)
+                    .addComponent(btnUpdate)
+                    .addComponent(jButton3))
+                .addContainerGap(501, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(342, 342, 342)
@@ -122,9 +166,64 @@ public class CommunityAdminJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_tblCommunityMouseClicked
 
+    private void populateTable(){
+        DefaultTableModel model = (DefaultTableModel) tblCommunity.getModel();
+        model.setRowCount(0);
+            
+        for (Community comm : communities.getCommunities()){
+            
+            Object[] row = new Object[2];
+            row[0] = comm;
+            row[1] = comm.getCityName();
+            
+
+            
+            
+            model.addRow(row);
+        }
+    }
+    private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
+        // TODO add your handling code here:
+          int selectedRowIndex = tblCommunity.getSelectedRow();
+       if (selectedRowIndex <0){
+           
+           JOptionPane.showMessageDialog(this,"Please select a row to view Community details");
+           return;
+       }
+       DefaultTableModel model = (DefaultTableModel) tblCommunity.getModel();
+      Community comm = (Community) model.getValueAt(selectedRowIndex, 0);
+      
+      
+      txtCommunityName.setText(String.valueOf(comm.getCommunityName()));
+      txtCityName.setText(String.valueOf(comm.getCityName()));
+     
+        
+    }//GEN-LAST:event_btnViewActionPerformed
+
+    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+        // TODO add your handling code here:
+          int selectedRowIndex = tblCommunity.getSelectedRow();
+       if (selectedRowIndex <0){
+           
+           JOptionPane.showMessageDialog(this,"Please select a row to Update employee details");
+           return;
+       }
+       DefaultTableModel model = (DefaultTableModel) tblCommunity.getModel();
+      Community comm = (Community) model.getValueAt(selectedRowIndex, 0);
+      
+      comm.setCommunityName(String.valueOf(txtCommunityName.getText()));
+      comm.setCityName(String.valueOf(txtCityName.getText()));
+   
+      
+      populateTable();
+    }//GEN-LAST:event_btnUpdateActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel NameLabel;
+    private javax.swing.JButton btnUpdate;
+    private javax.swing.JButton btnView;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
