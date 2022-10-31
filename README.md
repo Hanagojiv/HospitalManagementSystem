@@ -8,7 +8,7 @@ About this Assignment:
 •	The Admin can be System Admin, Hospital Admin or Community Admin or Doctor Admin
 
 •	A system Admin has all Authorities.
-•	System Admin can perform all CRUB Operations on Hospital and Encounter, Doctor, Community etc.
+•	System Admin can perform all CRUD Operations on Hospital and Encounter, Doctor, Community etc.
 
 •	A Community Admin can add City and Community.
 •	Example Boston – Roxbury community
