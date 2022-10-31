@@ -6,44 +6,24 @@ package hsmmodel;
 
 /**
  *
- * @author vivekhanagoji
+ * @author prathamesh
  */
 public class Doctor {
-    
-    String DoctorName;
-    int DocID;
-    int Age;
-    String Gender;
-    String Designation;
-    String Specialization;
-    int HospitalID;
-    String HospitalName;
-    String Address;
-    String ContactNum;
-    String EmailID;
 
-    public String getDoctorName() {
-        return DoctorName;
+    public String getDocName() {
+        return DocName;
     }
 
-    public void setDoctorName(String DoctorName) {
-        this.DoctorName = DoctorName;
+    public void setDocName(String DocName) {
+        this.DocName = DocName;
     }
 
-    public int getDocID() {
+    public String getDocID() {
         return DocID;
     }
 
-    public void setDocID(int DocID) {
+    public void setDocID(String DocID) {
         this.DocID = DocID;
-    }
-
-    public int getAge() {
-        return Age;
-    }
-
-    public void setAge(int Age) {
-        this.Age = Age;
     }
 
     public String getGender() {
@@ -54,67 +34,48 @@ public class Doctor {
         this.Gender = Gender;
     }
 
-    public String getDesignation() {
-        return Designation;
+    public String getAge() {
+        return Age;
     }
 
-    public void setDesignation(String Designation) {
-        this.Designation = Designation;
+    public void setAge(String Age) {
+        this.Age = Age;
     }
 
-    public String getSpecialization() {
-        return Specialization;
+    public String getExperience() {
+        return Experience;
     }
 
-    public void setSpecialization(String Specialization) {
-        this.Specialization = Specialization;
+    public void setExperience(String Experience) {
+        this.Experience = Experience;
     }
 
-    public int getHospitalID() {
-        return HospitalID;
+    public String getContact() {
+        return Contact;
     }
 
-    public void setHospitalID(int HospitalID) {
-        this.HospitalID = HospitalID;
+    public void setContact(String Contact) {
+        this.Contact = Contact;
     }
 
-    public String getHospitalName() {
-        return HospitalName;
+    public String getEmail() {
+        return Email;
     }
 
-    public void setHospitalName(String HospitalName) {
-        this.HospitalName = HospitalName;
+    public void setEmail(String Email) {
+        this.Email = Email;
     }
+    private String DocName;
+    private String DocID;
+    private String Gender;
+    private String Age;
+    private String Experience;
+    private String Contact;
+    private String Email;
 
-    public String getAddress() {
-        return Address;
-    }
-
-    public void setAddress(String Address) {
-        this.Address = Address;
-    }
-
-    public String getContactNum() {
-        return ContactNum;
-    }
-
-    public void setContactNum(String ContactNum) {
-        this.ContactNum = ContactNum;
-    }
-
-    public String getEmailID() {
-        return EmailID;
-    }
-
-    public void setEmailID(String EmailID) {
-        this.EmailID = EmailID;
-    }
-    
-    
     @Override
-   public String toString(){
-       return DoctorName;
-   }
-    
+    public String toString(){
+        return DocID;
+    }
     
 }

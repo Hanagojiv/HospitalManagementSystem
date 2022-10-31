@@ -6,33 +6,43 @@ package hsmmodel;
 
 /**
  *
- * @author vivekhanagoji
+ * @author prathamesh
  */
 public class Community {
-    
-    private String CommunityName;
-    private String CityName;
 
-    public String getCommunityName() {
-        return CommunityName;
+    public Community() {
     }
 
-    public void setCommunityName(String CommunityName) {
-        this.CommunityName = CommunityName;
+    public String getCity() {
+        return City;
     }
 
-    public String getCityName() {
-        return CityName;
+    public void setCity(String City) {
+        this.City = City;
     }
 
-    public void setCityName(String CityName) {
-        this.CityName = CityName;
+    public String getCommunity() {
+        return Community;
     }
-                   @Override
-   public String toString(){
-       return CommunityName;
-   }
-    
-    
-    
+
+    public void setCommunity(String Community) {
+        this.Community = Community;
+    }
+
+    public String getHouse() {
+        return House;
+    }
+
+    public void setHouse(String House) {
+        this.House = House;
+    }
+
+    private String City;
+
+    @Override
+    public String toString() {
+        return City;
+    }
+    private String Community;
+    private String House;
 }

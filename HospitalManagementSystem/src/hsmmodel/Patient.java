@@ -6,33 +6,24 @@ package hsmmodel;
 
 /**
  *
- * @author vivekhanagoji
+ * @author prathamesh
  */
 public class Patient {
-    
-    String PateintName;
-    int PateintID;
-    String Gender;
-    int Age;
-    int HospitalID;
-    String HospitalName;
-    String PhoneNo;
-    String EmailID;
 
-    public String getPateintName() {
-        return PateintName;
+    public String getName() {
+        return Name;
     }
 
-    public void setPateintName(String PateintName) {
-        this.PateintName = PateintName;
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
-    public int getPateintID() {
-        return PateintID;
+    public String getPatiendId() {
+        return PatiendId;
     }
 
-    public void setPateintID(int PateintID) {
-        this.PateintID = PateintID;
+    public void setPatiendId(String PatiendId) {
+        this.PatiendId = PatiendId;
     }
 
     public String getGender() {
@@ -43,50 +34,67 @@ public class Patient {
         this.Gender = Gender;
     }
 
-    public int getAge() {
+    private String Name;
+    private String PatiendId;
+    private String Gender;
+    private String Age;
+    private String Contact;
+    private String Email;
+    private String Height;
+    private String Weight;
+    private String BloodGroup;
+
+    public String getAge() {
         return Age;
     }
 
-    public void setAge(int Age) {
+    public void setAge(String Age) {
         this.Age = Age;
     }
 
-    public int getHospitalID() {
-        return HospitalID;
+    public String getContact() {
+        return Contact;
     }
 
-    public void setHospitalID(int HospitalID) {
-        this.HospitalID = HospitalID;
+    public void setContact(String Contact) {
+        this.Contact = Contact;
     }
 
-    public String getHospitalName() {
-        return HospitalName;
+    public String getEmail() {
+        return Email;
     }
 
-    public void setHospitalName(String HospitalName) {
-        this.HospitalName = HospitalName;
+    public void setEmail(String Email) {
+        this.Email = Email;
     }
 
-    public String getPhoneNo() {
-        return PhoneNo;
+    public String getHeight() {
+        return Height;
     }
 
-    public void setPhoneNo(String PhoneNo) {
-        this.PhoneNo = PhoneNo;
+    public void setHeight(String Height) {
+        this.Height = Height;
     }
 
-    public String getEmailID() {
-        return EmailID;
+    public String getWeight() {
+        return Weight;
     }
 
-    public void setEmailID(String EmailID) {
-        this.EmailID = EmailID;
+    public void setWeight(String Weight) {
+        this.Weight = Weight;
     }
 
-    public Patient addNewPatient() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getBloodGroup() {
+        return BloodGroup;
+    }
+
+    public void setBloodGroup(String BloodGroup) {
+        this.BloodGroup = BloodGroup;
     }
     
-    
-    
+
+    @Override
+    public String toString(){
+        return PatiendId;
+    }
 }

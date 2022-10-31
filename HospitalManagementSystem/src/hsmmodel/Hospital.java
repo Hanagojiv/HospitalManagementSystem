@@ -6,29 +6,16 @@ package hsmmodel;
 
 /**
  *
- * @author vivekhanagoji
+ * @author prathamesh
  */
 public class Hospital {
-    
-    private String HospitalName;
-    private int HospitalID;
-    private String City;
-    private String Community;
 
-    public String getHospitalName() {
-        return HospitalName;
+    public String getName() {
+        return Name;
     }
 
-    public void setHospitalName(String HospitalName) {
-        this.HospitalName = HospitalName;
-    }
-
-    public int getHospitalID() {
-        return HospitalID;
-    }
-
-    public void setHospitalID(int HospitalID) {
-        this.HospitalID = HospitalID;
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
     public String getCity() {
@@ -39,6 +26,46 @@ public class Hospital {
         this.City = City;
     }
 
+    private String Name;
+    private String City;
+    private String Community;
+
+    public String getZipCode() {
+        return ZipCode;
+    }
+
+    public void setZipCode(String ZipCode) {
+        this.ZipCode = ZipCode;
+    }
+
+    public String getHospitalID() {
+        return HospitalID;
+    }
+
+    public void setHospitalID(String HospitalID) {
+        this.HospitalID = HospitalID;
+    }
+
+    public String getContact() {
+        return Contact;
+    }
+
+    public void setContact(String Contact) {
+        this.Contact = Contact;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String Email) {
+        this.Email = Email;
+    }
+    private String ZipCode;
+    private String HospitalID;
+    private String Contact;
+    private String Email;
+
     public String getCommunity() {
         return Community;
     }
@@ -47,10 +74,8 @@ public class Hospital {
         this.Community = Community;
     }
     
-               @Override
-   public String toString(){
-       return HospitalName;
-   }
-    
-    
+    @Override
+    public String toString(){
+        return HospitalID;
+    }
 }

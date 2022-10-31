@@ -6,13 +6,33 @@ package hsmmodel;
 
 /**
  *
- * @author vivekhanagoji
+ * @author prathamesh
  */
 public class Person {
     
-    String Name;
-    String Age;
-    String EmailID;
+    private String Name;
+    private String PersonID;
+    private String Gender;
+    private String age;
+    private String Contact;
+    private String City;
+    private String Community;
+
+    public String getCity() {
+        return City;
+    }
+
+    public void setCity(String City) {
+        this.City = City;
+    }
+
+    public String getCommunity() {
+        return Community;
+    }
+
+    public void setCommunity(String Community) {
+        this.Community = Community;
+    }
 
     public String getName() {
         return Name;
@@ -22,25 +42,48 @@ public class Person {
         this.Name = Name;
     }
 
+    public String getPersonID() {
+        return PersonID;
+    }
+
+    public void setPersonID(String PersonID) {
+        this.PersonID = PersonID;
+    }
+
+    public String getGender() {
+        return Gender;
+    }
+
+    public void setGender(String Gender) {
+        this.Gender = Gender;
+    }
+
     public String getAge() {
-        return Age;
+        return age;
     }
 
-    public void setAge(String Age) {
-        this.Age = Age;
+    public void setAge(String age) {
+        this.age = age;
     }
 
-    public String getEmailID() {
-        return EmailID;
+    public String getContact() {
+        return Contact;
     }
 
-    public void setEmailID(String EmailID) {
-        this.EmailID = EmailID;
+    public void setContact(String Contact) {
+        this.Contact = Contact;
     }
-    
-           @Override
-   public String toString(){
-       return Name;
-   }
-    
+
+    public String getEmail() {
+        return City;
+    }
+
+    public void setEmail(String Email) {
+        this.City = Email;
+    }
+   
+    @Override
+    public String toString(){
+        return PersonID;
+    }
 }
