@@ -49,6 +49,11 @@ public class User extends javax.swing.JPanel {
         SearchButton5 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
 
+        jTabbedPane6.setBackground(java.awt.Color.lightGray);
+
+        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
+
+        SearchButton4.setBackground(java.awt.Color.lightGray);
         SearchButton4.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         SearchButton4.setText("View Patient");
         SearchButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -76,6 +81,8 @@ public class User extends javax.swing.JPanel {
 
         jSplitPane1.setLeftComponent(jPanel3);
 
+        jPanel4.setBackground(java.awt.Color.gray);
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -102,6 +109,9 @@ public class User extends javax.swing.JPanel {
 
         jTabbedPane6.addTab("Patient", jPanel2);
 
+        jPanel9.setBackground(new java.awt.Color(204, 204, 204));
+
+        CreateButton6.setBackground(new java.awt.Color(204, 204, 204));
         CreateButton6.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         CreateButton6.setText("New Encounter");
         CreateButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -110,6 +120,7 @@ public class User extends javax.swing.JPanel {
             }
         });
 
+        SearchButton5.setBackground(new java.awt.Color(204, 204, 204));
         SearchButton5.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         SearchButton5.setText("Manage Encounter");
         SearchButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -140,6 +151,8 @@ public class User extends javax.swing.JPanel {
         );
 
         jSplitPane2.setLeftComponent(jPanel9);
+
+        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

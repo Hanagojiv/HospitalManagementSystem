@@ -132,6 +132,9 @@ public class HMO_MainFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel3.setBackground(java.awt.Color.lightGray);
+
+        Patient.setBackground(new java.awt.Color(204, 204, 204));
         Patient.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         Patient.setText("PATIENT");
         Patient.addActionListener(new java.awt.event.ActionListener() {
@@ -140,6 +143,7 @@ public class HMO_MainFrame extends javax.swing.JFrame {
             }
         });
 
+        Hospital.setBackground(new java.awt.Color(204, 204, 204));
         Hospital.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         Hospital.setText("HOSPITAL");
         Hospital.addActionListener(new java.awt.event.ActionListener() {
@@ -148,6 +152,7 @@ public class HMO_MainFrame extends javax.swing.JFrame {
             }
         });
 
+        Community.setBackground(new java.awt.Color(204, 204, 204));
         Community.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         Community.setText("COMMUNITY");
         Community.addActionListener(new java.awt.event.ActionListener() {
@@ -156,6 +161,7 @@ public class HMO_MainFrame extends javax.swing.JFrame {
             }
         });
 
+        System.setBackground(new java.awt.Color(204, 204, 204));
         System.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         System.setText("SYSTEM");
         System.addActionListener(new java.awt.event.ActionListener() {
@@ -164,6 +170,7 @@ public class HMO_MainFrame extends javax.swing.JFrame {
             }
         });
 
+        Doctor.setBackground(new java.awt.Color(204, 204, 204));
         Doctor.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         Doctor.setText("DOCTOR");
         Doctor.addActionListener(new java.awt.event.ActionListener() {
@@ -178,6 +185,7 @@ public class HMO_MainFrame extends javax.swing.JFrame {
         userlbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         userlbl.setText("User Login");
 
+        Doctor1.setBackground(new java.awt.Color(204, 204, 204));
         Doctor1.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         Doctor1.setText("LOGIN");
         Doctor1.addActionListener(new java.awt.event.ActionListener() {
@@ -228,6 +236,8 @@ public class HMO_MainFrame extends javax.swing.JFrame {
         );
 
         jSplitPane1.setLeftComponent(jPanel3);
+
+        jPanel4.setBackground(java.awt.Color.gray);
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel1.setText("HOSPITAL MANAGEMENT SYSTEM");

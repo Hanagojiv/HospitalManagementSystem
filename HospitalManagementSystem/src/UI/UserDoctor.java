@@ -35,6 +35,9 @@ public class UserDoctor extends javax.swing.JPanel {
         SearchButton5 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
 
+        jPanel1.setBackground(java.awt.Color.lightGray);
+
+        CreateButton6.setBackground(new java.awt.Color(204, 204, 204));
         CreateButton6.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         CreateButton6.setText("New Encounter");
         CreateButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -43,6 +46,7 @@ public class UserDoctor extends javax.swing.JPanel {
             }
         });
 
+        SearchButton5.setBackground(new java.awt.Color(204, 204, 204));
         SearchButton5.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         SearchButton5.setText("Manage Encounter");
         SearchButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -73,6 +77,8 @@ public class UserDoctor extends javax.swing.JPanel {
         );
 
         jSplitPane1.setLeftComponent(jPanel1);
+
+        jPanel3.setBackground(java.awt.Color.gray);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);

@@ -42,11 +42,14 @@ public class AddCommunity extends javax.swing.JPanel {
         lblStreetNo = new javax.swing.JLabel();
         com = new javax.swing.JTextField();
 
+        setBackground(new java.awt.Color(153, 153, 153));
+
         jLabel1.setText("Community");
 
         lblHeader.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         lblHeader.setText("ADD COMMUNITY");
 
+        btnSavePerson.setBackground(new java.awt.Color(204, 204, 204));
         btnSavePerson.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btnSavePerson.setText("Save");
         btnSavePerson.addActionListener(new java.awt.event.ActionListener() {

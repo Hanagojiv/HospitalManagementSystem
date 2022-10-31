@@ -53,6 +53,8 @@ public class ViewCommunity extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         Table = new javax.swing.JTable();
 
+        setBackground(java.awt.Color.gray);
+
         Table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},

@@ -36,6 +36,9 @@ public class CommunityPage extends javax.swing.JPanel {
         SearchButton5 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
 
+        jPanel1.setBackground(java.awt.Color.lightGray);
+
+        SearchButton4.setBackground(new java.awt.Color(204, 204, 204));
         SearchButton4.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         SearchButton4.setText("ADD Community");
         SearchButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -44,6 +47,7 @@ public class CommunityPage extends javax.swing.JPanel {
             }
         });
 
+        SearchButton5.setBackground(new java.awt.Color(204, 204, 204));
         SearchButton5.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         SearchButton5.setText("View Community");
         SearchButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -74,6 +78,8 @@ public class CommunityPage extends javax.swing.JPanel {
         );
 
         jSplitPane1.setLeftComponent(jPanel1);
+
+        jPanel2.setBackground(java.awt.Color.gray);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);

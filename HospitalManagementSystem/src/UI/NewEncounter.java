@@ -57,6 +57,8 @@ public class NewEncounter extends javax.swing.JPanel {
         txtbx_hospName = new javax.swing.JTextField();
         txtHospitalID = new javax.swing.JTextField();
 
+        setBackground(java.awt.Color.gray);
+
         AgeLabel8.setText("Patient ID");
 
         PersonalInfoLabel10.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
@@ -93,6 +95,7 @@ public class NewEncounter extends javax.swing.JPanel {
 
         NameLabel9.setText("Name");
 
+        btn_add4.setBackground(new java.awt.Color(204, 204, 204));
         btn_add4.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_add4.setText("Add");
         btn_add4.addActionListener(new java.awt.event.ActionListener() {

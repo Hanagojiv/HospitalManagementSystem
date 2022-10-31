@@ -51,6 +51,8 @@ public class AddDoctor extends javax.swing.JPanel {
         txt_id = new javax.swing.JTextField();
         EmailLabel1 = new javax.swing.JLabel();
 
+        setBackground(java.awt.Color.gray);
+
         GenderLabel.setText("Gender");
 
         AgeLabel.setText("Age");
@@ -88,6 +90,7 @@ public class AddDoctor extends javax.swing.JPanel {
         NewEmployeeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         NewEmployeeLabel.setText("Add New Doctor");
 
+        AddButton.setBackground(new java.awt.Color(204, 204, 204));
         AddButton.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         AddButton.setText("ADD");
         AddButton.addActionListener(new java.awt.event.ActionListener() {
@@ -98,6 +101,7 @@ public class AddDoctor extends javax.swing.JPanel {
 
         NameLabel.setText("Name");
 
+        ResetButton.setBackground(new java.awt.Color(204, 204, 204));
         ResetButton.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         ResetButton.setText("Reset");
         ResetButton.addActionListener(new java.awt.event.ActionListener() {

@@ -64,6 +64,11 @@ public class AdminHosp extends javax.swing.JPanel {
         SearchButton6 = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
 
+        jTabbedPane1.setBackground(java.awt.Color.lightGray);
+
+        jPanel5.setBackground(new java.awt.Color(153, 153, 153));
+
+        CreateButton4.setBackground(new java.awt.Color(204, 204, 204));
         CreateButton4.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         CreateButton4.setText("Add");
         CreateButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -72,6 +77,7 @@ public class AdminHosp extends javax.swing.JPanel {
             }
         });
 
+        SearchButton1.setBackground(new java.awt.Color(204, 204, 204));
         SearchButton1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         SearchButton1.setText("Search");
         SearchButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -102,6 +108,8 @@ public class AdminHosp extends javax.swing.JPanel {
         );
 
         jSplitPane1.setLeftComponent(jPanel5);
+
+        jPanel6.setBackground(java.awt.Color.gray);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -211,7 +219,7 @@ public class AdminHosp extends javax.swing.JPanel {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
+            .addComponent(jSplitPane4)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

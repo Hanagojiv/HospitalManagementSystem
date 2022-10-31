@@ -68,6 +68,13 @@ public class SystemAdmin extends javax.swing.JPanel {
         SearchButton6 = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
 
+        setBackground(java.awt.Color.gray);
+
+        jTabbedPane1.setBackground(new java.awt.Color(204, 204, 204));
+
+        jPanel3.setBackground(java.awt.Color.lightGray);
+
+        CreateButton6.setBackground(new java.awt.Color(204, 204, 204));
         CreateButton6.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         CreateButton6.setText("Add");
         CreateButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -76,6 +83,7 @@ public class SystemAdmin extends javax.swing.JPanel {
             }
         });
 
+        SearchButton5.setBackground(new java.awt.Color(204, 204, 204));
         SearchButton5.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         SearchButton5.setText("Manage");
         SearchButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -107,6 +115,8 @@ public class SystemAdmin extends javax.swing.JPanel {
 
         jSplitPane1.setLeftComponent(jPanel3);
 
+        jPanel4.setBackground(java.awt.Color.gray);
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -133,6 +143,11 @@ public class SystemAdmin extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("Person", jPanel1);
 
+        jPanel5.setBackground(java.awt.Color.lightGray);
+
+        jPanel11.setBackground(java.awt.Color.lightGray);
+
+        CreateButton4.setBackground(new java.awt.Color(204, 204, 204));
         CreateButton4.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         CreateButton4.setText("Add");
         CreateButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -141,6 +156,7 @@ public class SystemAdmin extends javax.swing.JPanel {
             }
         });
 
+        SearchButton1.setBackground(new java.awt.Color(204, 204, 204));
         SearchButton1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         SearchButton1.setText("Manage");
         SearchButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -193,6 +209,8 @@ public class SystemAdmin extends javax.swing.JPanel {
 
         jSplitPane2.setLeftComponent(jPanel5);
 
+        jPanel6.setBackground(java.awt.Color.gray);
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
@@ -219,6 +237,9 @@ public class SystemAdmin extends javax.swing.JPanel {
 
         jTabbedPane1.addTab("Hospital", jPanel2);
 
+        jPanel8.setBackground(java.awt.Color.lightGray);
+
+        CreateButton7.setBackground(new java.awt.Color(204, 204, 204));
         CreateButton7.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         CreateButton7.setText("New Encounter");
         CreateButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -227,6 +248,7 @@ public class SystemAdmin extends javax.swing.JPanel {
             }
         });
 
+        SearchButton6.setBackground(new java.awt.Color(204, 204, 204));
         SearchButton6.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         SearchButton6.setText("View Encounter");
         SearchButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -257,6 +279,8 @@ public class SystemAdmin extends javax.swing.JPanel {
         );
 
         jSplitPane3.setLeftComponent(jPanel8);
+
+        jPanel9.setBackground(java.awt.Color.gray);
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);

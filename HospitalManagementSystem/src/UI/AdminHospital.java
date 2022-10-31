@@ -69,12 +69,15 @@ public class AdminHospital extends javax.swing.JPanel {
         Table = new javax.swing.JTable();
         PersonalInfoLabel = new javax.swing.JLabel();
 
+        setBackground(java.awt.Color.gray);
+
         GenderLabel.setText("City");
 
         NameLabel.setText("Hospital ID");
 
         NameLabel1.setText("Name");
 
+        btn_view.setBackground(new java.awt.Color(204, 204, 204));
         btn_view.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_view.setText("View");
         btn_view.addActionListener(new java.awt.event.ActionListener() {
@@ -87,6 +90,7 @@ public class AdminHospital extends javax.swing.JPanel {
         NewEmployeeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         NewEmployeeLabel.setText("Hospital Directory");
 
+        btn_update.setBackground(new java.awt.Color(204, 204, 204));
         btn_update.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_update.setText("Update");
         btn_update.addActionListener(new java.awt.event.ActionListener() {
@@ -97,6 +101,7 @@ public class AdminHospital extends javax.swing.JPanel {
 
         AgeLabel.setText("Community");
 
+        btn_delete.setBackground(new java.awt.Color(204, 204, 204));
         btn_delete.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_delete.setText("Delete");
         btn_delete.addActionListener(new java.awt.event.ActionListener() {

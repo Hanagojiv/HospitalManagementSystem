@@ -74,12 +74,15 @@ public class AdminPerson extends javax.swing.JPanel {
         PersonalInfoLabel = new javax.swing.JLabel();
         btn_update1 = new javax.swing.JButton();
 
+        setBackground(java.awt.Color.gray);
+
         GenderLabel.setText("Gender");
 
         NameLabel.setText("Person ID");
 
         NameLabel1.setText("Name");
 
+        btn_view.setBackground(new java.awt.Color(204, 204, 204));
         btn_view.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_view.setText("View");
         btn_view.addActionListener(new java.awt.event.ActionListener() {
@@ -92,6 +95,7 @@ public class AdminPerson extends javax.swing.JPanel {
         NewEmployeeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         NewEmployeeLabel.setText("Person Directory");
 
+        btn_update.setBackground(new java.awt.Color(204, 204, 204));
         btn_update.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_update.setText("Update");
         btn_update.addActionListener(new java.awt.event.ActionListener() {
@@ -131,6 +135,7 @@ public class AdminPerson extends javax.swing.JPanel {
         PersonalInfoLabel.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         PersonalInfoLabel.setText("Personal Details");
 
+        btn_update1.setBackground(new java.awt.Color(204, 204, 204));
         btn_update1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_update1.setText("Delete");
         btn_update1.addActionListener(new java.awt.event.ActionListener() {

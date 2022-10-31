@@ -102,8 +102,11 @@ public class AdminPatient extends javax.swing.JPanel {
         AdminPatDirCityCombo = new javax.swing.JComboBox<>();
         AdminPatDirCommCombo = new javax.swing.JComboBox<>();
 
+        setBackground(java.awt.Color.gray);
+
         NameLabel1.setText("Name");
 
+        btn_view.setBackground(new java.awt.Color(204, 204, 204));
         btn_view.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_view.setText("View");
         btn_view.addActionListener(new java.awt.event.ActionListener() {
@@ -112,6 +115,7 @@ public class AdminPatient extends javax.swing.JPanel {
             }
         });
 
+        btn_update.setBackground(new java.awt.Color(204, 204, 204));
         btn_update.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_update.setText("Update");
         btn_update.addActionListener(new java.awt.event.ActionListener() {
@@ -124,6 +128,7 @@ public class AdminPatient extends javax.swing.JPanel {
 
         ContactLabel.setText("Contact");
 
+        btn_add.setBackground(new java.awt.Color(204, 204, 204));
         btn_add.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_add.setText("Delete");
         btn_add.addActionListener(new java.awt.event.ActionListener() {
@@ -187,6 +192,7 @@ public class AdminPatient extends javax.swing.JPanel {
             }
         });
 
+        btnSearch1.setBackground(new java.awt.Color(204, 204, 204));
         btnSearch1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btnSearch1.setText("Search");
         btnSearch1.addActionListener(new java.awt.event.ActionListener() {

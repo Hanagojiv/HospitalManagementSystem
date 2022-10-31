@@ -47,6 +47,8 @@ public class AddHospital extends javax.swing.JPanel {
         GenderLabel1 = new javax.swing.JLabel();
         txtbx_community = new javax.swing.JComboBox<>();
 
+        setBackground(java.awt.Color.gray);
+
         txtbx_name.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtbx_nameKeyReleased(evt);
@@ -63,6 +65,7 @@ public class AddHospital extends javax.swing.JPanel {
         NewEmployeeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         NewEmployeeLabel.setText("Add New Hospital");
 
+        AddButton.setBackground(new java.awt.Color(204, 204, 204));
         AddButton.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         AddButton.setText("ADD");
         AddButton.addActionListener(new java.awt.event.ActionListener() {
@@ -73,6 +76,7 @@ public class AddHospital extends javax.swing.JPanel {
 
         NameLabel.setText("Name");
 
+        ResetButton.setBackground(new java.awt.Color(204, 204, 204));
         ResetButton.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         ResetButton.setText("Reset");
         ResetButton.addActionListener(new java.awt.event.ActionListener() {

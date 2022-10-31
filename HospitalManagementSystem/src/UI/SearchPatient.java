@@ -79,6 +79,8 @@ public class SearchPatient extends javax.swing.JPanel {
         AgeLabel3 = new javax.swing.JLabel();
         txtbx_bloodgroup = new javax.swing.JTextField();
 
+        setBackground(java.awt.Color.gray);
+
         ContactLabel4.setText("Contact");
 
         PersonalInfoLabel9.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
@@ -107,6 +109,7 @@ public class SearchPatient extends javax.swing.JPanel {
         });
         jScrollPane5.setViewportView(Table4);
 
+        btnSearch1.setBackground(new java.awt.Color(204, 204, 204));
         btnSearch1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btnSearch1.setText("Search");
         btnSearch1.addActionListener(new java.awt.event.ActionListener() {
@@ -139,6 +142,7 @@ public class SearchPatient extends javax.swing.JPanel {
         PersonalInfoLabel8.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         PersonalInfoLabel8.setText("Personal Details");
 
+        btn_view4.setBackground(new java.awt.Color(204, 204, 204));
         btn_view4.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_view4.setText("View");
         btn_view4.addActionListener(new java.awt.event.ActionListener() {

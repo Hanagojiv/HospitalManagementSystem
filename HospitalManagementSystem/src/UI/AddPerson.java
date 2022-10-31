@@ -61,6 +61,9 @@ public class AddPerson extends javax.swing.JPanel {
         EmailLabel3 = new javax.swing.JLabel();
         txtbx_persontype = new javax.swing.JComboBox<>();
 
+        setBackground(java.awt.Color.gray);
+
+        AddButton.setBackground(new java.awt.Color(204, 204, 204));
         AddButton.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         AddButton.setText("ADD");
         AddButton.addActionListener(new java.awt.event.ActionListener() {
@@ -75,6 +78,7 @@ public class AddPerson extends javax.swing.JPanel {
 
         AgeLabel.setText("Age");
 
+        ResetButton.setBackground(new java.awt.Color(204, 204, 204));
         ResetButton.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         ResetButton.setText("Reset");
         ResetButton.addActionListener(new java.awt.event.ActionListener() {

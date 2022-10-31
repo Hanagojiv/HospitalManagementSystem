@@ -61,6 +61,8 @@ public class AdminLogin extends javax.swing.JPanel {
         pwd = new javax.swing.JPasswordField();
         AddButton = new javax.swing.JButton();
 
+        setBackground(java.awt.Color.gray);
+
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel1.setText("Welcome to Hospital Management System");
 
@@ -75,6 +77,7 @@ public class AdminLogin extends javax.swing.JPanel {
         ContactLabel.setFont(new java.awt.Font("Lucida Grande", 1, 12)); // NOI18N
         ContactLabel.setText("Password");
 
+        AddButton.setBackground(new java.awt.Color(204, 204, 204));
         AddButton.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         AddButton.setText("Login");
         AddButton.addActionListener(new java.awt.event.ActionListener() {

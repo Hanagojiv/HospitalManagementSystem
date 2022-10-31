@@ -70,6 +70,8 @@ public class SearchEncounterHistory extends javax.swing.JPanel {
         txtbx_email2 = new javax.swing.JTextField();
         txtbx_hospid = new javax.swing.JTextField();
 
+        setBackground(java.awt.Color.gray);
+
         NewEmployeeLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         NewEmployeeLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         NewEmployeeLabel4.setText("Encounter History");
@@ -83,6 +85,7 @@ public class SearchEncounterHistory extends javax.swing.JPanel {
             }
         });
 
+        btnSearch1.setBackground(new java.awt.Color(204, 204, 204));
         btnSearch1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btnSearch1.setText("Search");
         btnSearch1.addActionListener(new java.awt.event.ActionListener() {
@@ -112,6 +115,7 @@ public class SearchEncounterHistory extends javax.swing.JPanel {
         });
         jScrollPane5.setViewportView(Table4);
 
+        btn_view4.setBackground(new java.awt.Color(204, 204, 204));
         btn_view4.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_view4.setText("View");
         btn_view4.addActionListener(new java.awt.event.ActionListener() {
@@ -148,6 +152,7 @@ public class SearchEncounterHistory extends javax.swing.JPanel {
             }
         });
 
+        btn_add4.setBackground(new java.awt.Color(204, 204, 204));
         btn_add4.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_add4.setText("Delete");
         btn_add4.addActionListener(new java.awt.event.ActionListener() {
@@ -156,6 +161,7 @@ public class SearchEncounterHistory extends javax.swing.JPanel {
             }
         });
 
+        btn_update4.setBackground(new java.awt.Color(204, 204, 204));
         btn_update4.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         btn_update4.setText("Update");
         btn_update4.addActionListener(new java.awt.event.ActionListener() {

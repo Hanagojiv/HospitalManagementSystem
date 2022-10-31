@@ -38,6 +38,9 @@ public class UserPatient extends javax.swing.JPanel {
         SearchButton4 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
 
+        jPanel1.setBackground(java.awt.Color.lightGray);
+
+        SearchButton4.setBackground(new java.awt.Color(204, 204, 204));
         SearchButton4.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         SearchButton4.setText("Manage Patient");
         SearchButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -64,6 +67,8 @@ public class UserPatient extends javax.swing.JPanel {
         );
 
         jSplitPane1.setLeftComponent(jPanel1);
+
+        jPanel3.setBackground(java.awt.Color.gray);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
