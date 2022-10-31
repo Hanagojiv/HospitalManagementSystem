@@ -237,6 +237,8 @@ public class AdminHospital extends javax.swing.JPanel {
 
     private void btn_updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_updateActionPerformed
         // TODO add your handling code here:
+        
+        boolean valid = validationForFields();
         int row = Table.getSelectedRow();
 
         if(row<0){
@@ -252,7 +254,7 @@ public class AdminHospital extends javax.swing.JPanel {
         String city = txtbx_city.getText();
         String community = txtbx_community.getText();
 
-        
+        if(valid){
         selectedHospital.setHospitalID(id);
         selectedHospital.setName(name);
         selectedHospital.setCity(city);
@@ -260,8 +262,67 @@ public class AdminHospital extends javax.swing.JPanel {
         
         
         populateTable();
+        }
     }//GEN-LAST:event_btn_updateActionPerformed
 
+    private boolean validationForFields() {
+        
+     if(txtbx_name.getText().length()==0)
+                {
+                     JOptionPane.showMessageDialog(this," Name Can't be blank, please enter Hospital Name");
+                     txtbx_name.requestFocus();
+                     txtbx_name.setText("");
+                     return false;
+                }
+                
+               else{
+        if(!txtbx_name.getText().matches("^[a-zA-Z]+[\\-'\\s]?[a-zA-Z ]+$"))
+            {
+                 JOptionPane.showMessageDialog(this," Invalid name. ");
+                 txtbx_name.requestFocus();
+                 txtbx_name.setText("");
+                 return false;
+                
+                
+            }
+          }
+                   if(txtbx_id.getText().isBlank() )
+    {
+        JOptionPane.showMessageDialog(this," Hospital ID Can't be blank, please enter Hospital ID ");
+        txtbx_id.requestFocus();
+        txtbx_id.setText("");
+        return false;
+    }
+        else
+        {
+            
+             if(!txtbx_id.getText().matches("^[0-9]{0,3}$"))
+             {
+                JOptionPane.showMessageDialog(this," Invalid Hospital ID, Note : Hospital ID is of 3 digit  ");
+                txtbx_id.requestFocus();
+                return false;
+                
+             }  
+        }
+                       if(txtbx_city.getText().isBlank())
+            {
+                    JOptionPane.showMessageDialog(this," Please Enter a city ");
+                    txtbx_city.requestFocus();
+                    //comboCity.setText("");
+                   return false;
+            }
+           
+                if(txtbx_community.getText().isBlank())
+            {
+                    JOptionPane.showMessageDialog(this," Please enter a Community ");
+                    txtbx_community.requestFocus();
+                    //comboCity.setText("");
+                   return false;
+            }       
+        
+        return true;
+    }
+    
     private void btn_deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_deleteActionPerformed
         // TODO add your handling code here:
         int row = Table.getSelectedRow();

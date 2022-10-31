@@ -36,11 +36,14 @@ public class AdminPerson extends javax.swing.JPanel {
         
         for(Person prn : prnDir.getpersonDirectory()){
             
-            Object[] row = new Object[4];
+            Object[] row = new Object[6];
             row[0] = prn;
             row[1] = prn.getName();
-            row[2] = prn.getAge();
-            row[3] = prn.getContact();
+            row[2] = prn.getGender();
+            row[3] = prn.getAge();
+            row[4] = prn.getCommunity();
+            row[5] = prn.getCity();
+            
             
             model.addRow(row);
         }
@@ -60,17 +63,16 @@ public class AdminPerson extends javax.swing.JPanel {
         GenderLabel = new javax.swing.JLabel();
         NameLabel = new javax.swing.JLabel();
         NameLabel1 = new javax.swing.JLabel();
-        txtbx_contact = new javax.swing.JTextField();
+        txtCommunity = new javax.swing.JTextField();
         txtbx_name = new javax.swing.JTextField();
         txtbx_id = new javax.swing.JTextField();
         btn_view = new javax.swing.JButton();
         NewEmployeeLabel = new javax.swing.JLabel();
         btn_update = new javax.swing.JButton();
-        PersonalInfoLabel1 = new javax.swing.JLabel();
         EmailLabel = new javax.swing.JLabel();
         AgeLabel = new javax.swing.JLabel();
         ContactLabel = new javax.swing.JLabel();
-        txtbx_email = new javax.swing.JTextField();
+        txtCity = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         Table = new javax.swing.JTable();
         PersonalInfoLabel = new javax.swing.JLabel();
@@ -102,34 +104,31 @@ public class AdminPerson extends javax.swing.JPanel {
             }
         });
 
-        PersonalInfoLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
-        PersonalInfoLabel1.setText("Conatct Information");
-
-        EmailLabel.setText("Email Id");
+        EmailLabel.setText("City");
 
         AgeLabel.setText("Age");
 
-        ContactLabel.setText("Contact");
+        ContactLabel.setText("Community");
 
-        txtbx_email.addActionListener(new java.awt.event.ActionListener() {
+        txtCity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtbx_emailActionPerformed(evt);
+                txtCityActionPerformed(evt);
             }
         });
 
         Table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "Person ID", "Name", "Age", "Contact"
+                "Person ID", "Name", "Gender", "Age", "Community", "City"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -183,9 +182,6 @@ public class AdminPerson extends javax.swing.JPanel {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(PersonalInfoLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGap(116, 116, 116))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(PersonalInfoLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(49, 49, 49))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(ContactLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGap(150, 150, 150))
@@ -193,8 +189,8 @@ public class AdminPerson extends javax.swing.JPanel {
                                 .addComponent(EmailLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtbx_email, javax.swing.GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)
-                                    .addComponent(txtbx_contact))))
+                                    .addComponent(txtCity, javax.swing.GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)
+                                    .addComponent(txtCommunity))))
                         .addGap(551, 551, 551))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(17, 17, 17)
@@ -235,15 +231,13 @@ public class AdminPerson extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(AgeLabel)
                     .addComponent(txtbx_age, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(PersonalInfoLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ContactLabel)
-                    .addComponent(txtbx_contact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtbx_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(EmailLabel))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -269,8 +263,8 @@ public class AdminPerson extends javax.swing.JPanel {
 //
         txtbx_id.setText(selectedPerson.getPersonID());
         txtbx_name.setText(selectedPerson.getName());
-        txtbx_email.setText(selectedPerson.getEmail());
-        txtbx_contact.setText(selectedPerson.getContact());
+        txtCity.setText(selectedPerson.getCity());
+        txtCommunity.setText(selectedPerson.getCommunity());
         txtbx_gender.setText(selectedPerson.getGender());
         txtbx_age.setText(selectedPerson.getAge());
         
@@ -292,27 +286,30 @@ public class AdminPerson extends javax.swing.JPanel {
         
         String id = txtbx_id.getText();
         String name = txtbx_name.getText();
-        String email = txtbx_email.getText();
-        String contact = txtbx_contact.getText();
+        //String email = txtCity.getText();
+        String Community = txtCommunity.getText();
+        String City = txtCity.getText();
         String gender = txtbx_gender.getText();
         String age = txtbx_age.getText();
         
         selectedPerson.setPersonID(id);
         selectedPerson.setName(name);
-        selectedPerson.setContact(contact);
-        selectedPerson.setEmail(email);
+        selectedPerson.setCommunity(Community);
+        selectedPerson.setCity(City);
         selectedPerson.setGender(gender);
         selectedPerson.setAge(age);
         
         populateTable();
     }//GEN-LAST:event_btn_updateActionPerformed
 
-    private void txtbx_emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtbx_emailActionPerformed
+    private void txtCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCityActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtbx_emailActionPerformed
+    }//GEN-LAST:event_txtCityActionPerformed
 
     private void btn_update1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_update1ActionPerformed
         // TODO add your handling code here:
+         
+        boolean valid = validationForFields();
         int row = Table.getSelectedRow();
 
         if(row<0){
@@ -327,7 +324,97 @@ public class AdminPerson extends javax.swing.JPanel {
         
         JOptionPane.showMessageDialog(this, "Person Deleted!"); 
     }//GEN-LAST:event_btn_update1ActionPerformed
-
+private boolean validationForFields() {
+    
+    
+                if(txtbx_name.getText().length()==0)
+                {
+                     JOptionPane.showMessageDialog(this," Name Can't be blank, please enter Person Name");
+                     txtbx_name.requestFocus();
+                     txtbx_name.setText("");
+                     return false;
+                }
+                
+               else{
+        if(!txtbx_name.getText().matches("^[a-zA-Z]+[\\-'\\s]?[a-zA-Z ]+$"))
+            {
+                 JOptionPane.showMessageDialog(this," Invalid name. ");
+                 txtbx_name.requestFocus();
+                 txtbx_name.setText("");
+                 return false;
+                
+                
+            }
+          }
+                   if(txtbx_id.getText().isBlank() )
+    {
+        JOptionPane.showMessageDialog(this," Person ID Can't be blank, please enter Person ID ");
+        txtbx_id.requestFocus();
+        txtbx_id.setText("");
+        return false;
+    }
+        else
+        {
+            
+             if(!txtbx_id.getText().matches("^[0-9]{0,6}$"))
+             {
+                JOptionPane.showMessageDialog(this," Invalid Person, Note : Person ID is of 6 digit  ");
+                txtbx_id.requestFocus();
+                return false;
+                
+             }  
+        }
+                   
+           if(txtbx_age.getText().isBlank() )
+    {
+        JOptionPane.showMessageDialog(this," Person Age Can't be blank, please enter Age ");
+        txtbx_age.requestFocus();
+        txtbx_age.setText("");
+        return false;
+    }
+        else
+        {
+            
+             if(!txtbx_age.getText().matches("^[0-9]{0,2}$"))
+             {
+                JOptionPane.showMessageDialog(this," Employee should be between 0 to 100 years old. ");
+                txtbx_age.requestFocus();
+                return false;
+                
+             }  
+        }
+           
+           
+           if(txtCity.getText().isBlank())
+            {
+                    JOptionPane.showMessageDialog(this," Please enter a City ");
+                    txtCity.requestFocus();
+                    //comboCity.setText("");
+                   return false;
+            }
+           
+                if(txtCommunity.getText().isBlank())
+            {
+                    JOptionPane.showMessageDialog(this," Please select a Community ");
+                    txtCommunity.requestFocus();
+                    //comboCity.setText("");
+                   return false;
+            }
+                 if(txtbx_gender.getText().isBlank())
+            {
+                    JOptionPane.showMessageDialog(this," Please select a Gender ");
+                    txtbx_gender.requestFocus();
+                    //comboCity.setText("");
+                   return false;
+            }
+           
+           
+                   
+                   
+                
+                return true;
+    
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AgeLabel;
@@ -338,15 +425,14 @@ public class AdminPerson extends javax.swing.JPanel {
     private javax.swing.JLabel NameLabel1;
     private javax.swing.JLabel NewEmployeeLabel;
     private javax.swing.JLabel PersonalInfoLabel;
-    private javax.swing.JLabel PersonalInfoLabel1;
     private javax.swing.JTable Table;
     private javax.swing.JButton btn_update;
     private javax.swing.JButton btn_update1;
     private javax.swing.JButton btn_view;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField txtCity;
+    private javax.swing.JTextField txtCommunity;
     private javax.swing.JTextField txtbx_age;
-    private javax.swing.JTextField txtbx_contact;
-    private javax.swing.JTextField txtbx_email;
     private javax.swing.JTextField txtbx_gender;
     private javax.swing.JTextField txtbx_id;
     private javax.swing.JTextField txtbx_name;
